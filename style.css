@@ -144,6 +144,11 @@ main{
   color: var(--title-color);
 }
 
+.logo-alt span {
+  color: var(--body-color);
+}
+
+
 span{
   color: var(--base-color);
 }
@@ -458,4 +463,91 @@ nav.show div.icon-close{
 
 #contact ul l1 i{
   color: var(--base-color);
+}
+
+/*==== FOOTER ======*/
+
+footer{
+  background: var(--base-color);
+}
+
+footer .logo{
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+
+footer .brand p{
+   color: var(--text-color-light);
+   margin-bottom: 0.75rem;
+}
+
+footer i{
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a{
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover{
+  transform: translateY(-10px);
+}
+
+
+/*==== BUTTON UP TOP ======*/
+.up-top{
+  color: var(--text-color-light);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  
+
+  padding: 0.6rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translatey(100%);
+}
+
+.up-top img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.up-top.show{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(2%);
+}
+
+/*==== RESPONSIVO ======*/
+/*estra large devices: 1200> */
+@media (min-width: 1200px){
+
+}
+
+/*large devices: 1023 > */
+@media (min-width: 1023px){
+
+}
+
+/*large devices: 992 > */
+@media (min-width: 992px){
+
+}
+
+/*large devices: 767 > */
+@media (min-width: 767px){
+
 }
